@@ -1,37 +1,25 @@
-# Mini Network Probe
+# Mini network probe
 
-A lightweight Python script that performs basic network diagnostics by resolving a hostname and measuring TCP connection latency to port 443 (HTTPS).
+A lightweight Python utility for testing website availability and performance using DNS, TCP, TLS, and HTTP checks.
+
+---
 
 ## Features
 
-- DNS resolution (hostname → IP address)
-- TCP connection test to port 443
-- Latency measurement for connection setup
-- Simple and dependency-free (uses Python standard library only)
+- DNS resolution testing
+- TCP connectivity checks (port 443)
+- TLS/SSL handshake validation
+- HTTP response verification
+- Latency measurement (DNS / TCP / TLS / HTTP)
+- Multi-host support
+- No external dependencies
 
 ---
 
-## How It Works
+## Installation
 
-The script:
-1. Resolves a domain name using DNS
-2. Converts it to an IP address
-3. Opens a TCP socket connection to port 443
-4. Measures how long the connection takes
-5. Prints results to the terminal
-
----
-
-## Screenshot
-
-### CLI
-![CLI](assets/cli.png)
-
----
-
-## Usage
-
-Run the script with Python:
+Clone the repository:
 
 ```bash
-python main.py
+git clone https://github.com/MartinRazak/mini-network-probe.git
+cd mini-network-probe
